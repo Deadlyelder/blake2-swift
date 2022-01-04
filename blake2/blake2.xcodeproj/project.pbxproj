@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE67AAA62784BCD9002F4553 /* blake2utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67AAA52784BCD9002F4553 /* blake2utility.swift */; };
 		CEB84555278436F400F1BC0E /* blake2.docc in Sources */ = {isa = PBXBuildFile; fileRef = CEB84554278436F400F1BC0E /* blake2.docc */; };
 		CEB8455B278436F500F1BC0E /* blake2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB84550278436F400F1BC0E /* blake2.framework */; };
 		CEB84560278436F500F1BC0E /* blake2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8455F278436F500F1BC0E /* blake2Tests.swift */; };
 		CEB84561278436F500F1BC0E /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB84553278436F400F1BC0E /* blake2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB8456B27843B5500F1BC0E /* blake2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8456A27843B5500F1BC0E /* blake2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE67AAA52784BCD9002F4553 /* blake2utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blake2utility.swift; sourceTree = "<group>"; };
 		CEB84550278436F400F1BC0E /* blake2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = blake2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB84553278436F400F1BC0E /* blake2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blake2.h; sourceTree = "<group>"; };
 		CEB84554278436F400F1BC0E /* blake2.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = blake2.docc; sourceTree = "<group>"; };
 		CEB8455A278436F500F1BC0E /* blake2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blake2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB8455F278436F500F1BC0E /* blake2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blake2Tests.swift; sourceTree = "<group>"; };
+		CEB8456A27843B5500F1BC0E /* blake2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blake2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				CEB84553278436F400F1BC0E /* blake2.h */,
+				CE67AAA52784BCD9002F4553 /* blake2utility.swift */,
+				CEB8456A27843B5500F1BC0E /* blake2.swift */,
 				CEB84554278436F400F1BC0E /* blake2.docc */,
 			);
 			path = blake2;
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB8456B27843B5500F1BC0E /* blake2.swift in Sources */,
+				CE67AAA62784BCD9002F4553 /* blake2utility.swift in Sources */,
 				CEB84555278436F400F1BC0E /* blake2.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +405,7 @@
 		CEB84568278436F500F1BC0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S36KPVNQU4;
@@ -412,6 +421,7 @@
 		CEB84569278436F500F1BC0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S36KPVNQU4;
